@@ -80,7 +80,9 @@ for epoch in range(5):
         total_loss += loss.item()
         total_correct += get_num_correct(preds, labels)
     print(
-        f"epoch: {epoch} total_correct: {total_correct} total_loss: {total_loss}")
+        f"epoch: {epoch} total_correct: {total_correct} \
+                    total_loss: {total_loss}"
+    )
     print(f"accuracy of epoch {epoch}: {total_correct/len(train_set)}")
 # %%
 len(train_set)

@@ -1,4 +1,5 @@
 import torch
+
 t1 = torch.ones(4,4,dtype=torch.int64)
 t2 = t1*2
 t3 = t1*3

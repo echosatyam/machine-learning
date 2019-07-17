@@ -1,5 +1,6 @@
-import torch
 import numpy as np
+import torch
+
 data = np.array([1, 2, 3])
 t1 = torch.Tensor(data)
 t2 = torch.tensor(data)

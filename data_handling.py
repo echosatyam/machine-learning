@@ -1,9 +1,9 @@
 # %%
+import matplotlib.pyplot as plt
+import numpy as np
 import torch
 import torchvision
 from torchvision import transforms
-import numpy as np
-import matplotlib.pyplot as plt
 
 torch.set_printoptions(linewidth=120)
 train_set = torchvision.datasets.FashionMNIST(

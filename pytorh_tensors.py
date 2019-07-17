@@ -1,6 +1,7 @@
 # %%
-import torch
 import numpy as np
+import torch
+
 t = torch.Tensor()
 print(type(t))
 

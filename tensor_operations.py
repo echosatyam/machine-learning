@@ -1,5 +1,6 @@
-import torch
 import numpy as numpy
+import torch
+
 t1 = torch.tensor([[1,2],[3,4]],dtype=torch.float32)
 t2 = torch.tensor([[9,-2],[-7,6]],dtype=torch.float32)
 print(t1[0][0])

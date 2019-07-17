@@ -1,4 +1,7 @@
+import torch
 import torch.nn as nn
+
+
 class Network(nn.Module):
     def __init__(self):
         super(Network, self).__init__()
@@ -16,3 +19,21 @@ class Network(nn.Module):
         return t
 network = Network()
 print(network)
+print(network.conv1.weight.shape)
+print(network.conv2.weight.shape)
+print(network.fc1.weight.shape)
+print(network.fc2.weight.shape)
+print(network.out.weight.shape)
+# print(network.conv2.weight)
+print(network.fc1)
+in_features = torch.tensor([1,2,3,4,5],dtype = torch.float32)
+weight_matrix = torch.tensor([
+    [1,2,3,4,1],
+    [2,3,4,5,7],
+    [21,3,4,5,7]
+],dtype=torch.float32)
+print(weight_matrix.matmul(in_features))
+
+
+for name, param in network.named_parameters():
+    print(name,param.shape)

@@ -16,7 +16,7 @@ print(type(t2), t2.dtype)
 print(type(t3), t3.dtype)
 print(type(t4), t4.dtype)
 print(torch.get_default_dtype())
-#t1 = torch.tensor([1,2,3],dtype=torch.float64)
+# t1 = torch.tensor([1,2,3],dtype=torch.float64)
 print(t1, t1.dtype)
 data[0] = 0
 data[1] = 0
